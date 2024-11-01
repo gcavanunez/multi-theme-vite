@@ -44,7 +44,7 @@ export default defineConfig(() => {
             const theme = chunkInfo.name.split("-")[0];
             if (chunkInfo.name.includes("-js")) {
               return `themes/${theme}/js/[name].js`;
-            }
+           }
             // when css files are empty, they are faulty classified
             if (chunkInfo.name.includes("-style")) {
               return `themes/${theme}/css/app.css`;
